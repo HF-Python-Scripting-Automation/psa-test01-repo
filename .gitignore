@@ -1,0 +1,54 @@
+# Path: .gitignore
+
+### --- Python Standard ---
+# Überall nach pycache suchen
+**/__pycache__/
+*.py[cod]
+*$py.class
+
+# Distribution / Packaging
+build/
+dist/
+*.egg-info/
+*.egg
+MANIFEST
+
+### --- Environments (SmartLearn spezifisch) ---
+.venv/
+venv/
+ENV/
+env/
+.python-version
+
+### --- IDEs & Editors ---
+# JetBrains / PyCharm
+.idea/
+# VS Code
+.vscode/
+*.code-workspace
+
+### --- Testing & Coverage ---
+.pytest_cache/
+.coverage
+htmlcov/
+
+### --- OS & System ---
+.DS_Store
+Thumbs.db
+*.swp
+*.bak
+
+### --- PSA / Server Automatisierung ---
+# Ansible
+*.retry
+ansible.log
+
+# Secrets (Extrem wichtig für E2EE)
+*.key
+*.pem
+.env
+secret.yaml
+
+# Logs & Temporäres
+logs/
+*.log

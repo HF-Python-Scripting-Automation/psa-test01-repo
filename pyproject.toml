@@ -1,0 +1,19 @@
+# Path: pyproject.toml
+
+[project]
+name = "psa_test_01_haiko"
+version = "0.0.1"
+description = "PSA Test Haiko"
+requires-python = ">=3.10"
+dependencies = [
+    "colorama==0.4.6",
+]
+
+# NEU: Explizite Konfiguration der Paket-Erkennung
+[tool.setuptools]
+packages = ["servicename", "servicename.utils"]
+
+# Alternativ kannst du alles finden lassen, aber logs ausschliessen:
+# [tool.setuptools.packages.find]
+# include = ["servicename*"]
+# exclude = ["logs*", "tests*"]
